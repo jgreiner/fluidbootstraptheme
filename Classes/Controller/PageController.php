@@ -1,8 +1,9 @@
 <?php
+//namespace FluidBT\Fluidbootstraptheme\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2014 Claus Due <claus@namelesscoder.net>
+ *  (c) 2013 Claus Due <claus@namelesscoder.net>
  *
  *  All rights reserved
  *
@@ -23,17 +24,15 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-/**
- * Page Controller
- *
- * Controller which is used to render individual page template
- * files - each template corresponding to one action.
- *
- * @package FluidpagesBootstrap
- * @subpackage Controller
- * @route off
- */
-class Tx_Fluidbootstraptheme_Controller_PageController extends Tx_Fluidpages_Controller_AbstractPageController {
+//use FluidTYPO3\Fluidcontent\Controller\AbstractContentController;
+use FluidTYPO3\Fluidpages\Controller\AbstractPageController;
+
+
+
+class Tx_Fluidbootstraptheme_Controller_PageController extends AbstractPageController {
+
+
+//class Tx_Fluidbootstraptheme_Controller_PageController extends Tx_Fluidpages_Controller_AbstractPageController {
 
 	/**
 	 * @return string
@@ -41,11 +40,14 @@ class Tx_Fluidbootstraptheme_Controller_PageController extends Tx_Fluidpages_Con
 	public function frontPageAction() {
 
 	}
+    
 
 	/**
 	 * @return string
 	 */
 	public function renderAction() {
+
+
 
 	}
 
@@ -61,6 +63,6 @@ class Tx_Fluidbootstraptheme_Controller_PageController extends Tx_Fluidpages_Con
 	 */
 	public function errorAction() {
 
-	}
+    }
 
 }
